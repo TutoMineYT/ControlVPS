@@ -3,5 +3,5 @@
 
 <h2> INSTALATION </h2>
 
-`sudo apt install -y python3-certbot-nginx`
+`git clone https://github.com/TutoMineYT/ControlVPS/`
 
