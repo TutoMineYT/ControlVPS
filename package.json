@@ -1,0 +1,19 @@
+{
+  "name": "controlvps",
+  "version": "1.0.0",
+  "description": "Control your VPS with a simple panel!",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i && node index.js"
+  },
+  "author": "TutoMine",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-session": "^2.0.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "megadb": "^3.4.0",
+    "randomstring": "^1.2.2"
+  }
+}
