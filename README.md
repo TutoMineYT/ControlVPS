@@ -3,5 +3,7 @@
 
 <h2> INSTALATION </h2>
 
-`git clone https://github.com/TutoMineYT/ControlVPS/`
+`git clone https://github.com/TutoMineYT/ControlVPS/`<br>
+`cd ControlVPS`<br>
+`npm start`
 
