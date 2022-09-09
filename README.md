@@ -15,6 +15,13 @@
 `cd ControlVPS`<br>
 `npm start`
 
+<h2 ACCESS </h2>
+
+http://IP:9090
+
+EX:
+http://192.168.8.254:9090
+
 <h2> DEFAULT CREDENTIALS </h2>
 
 `USERNAME: admin`
