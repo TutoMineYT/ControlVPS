@@ -17,8 +17,8 @@
 
 <h2> DEFAULT CREDENTIALS </h2>
 
-`USERNAME: ADMIN`
-`PASSWORD: ADMIN`
+`USERNAME: admin`
+`PASSWORD: admin`
 <h3> You can change them on the "mega_databases/webData.json" config </h3>
 
 <footer> Made by TutoMine </footer>
