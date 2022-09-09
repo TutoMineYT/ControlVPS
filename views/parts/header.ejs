@@ -1,0 +1,18 @@
+<header class="nav-bar">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="brand-column w-col w-col-4">
+          <div class="company">
+            <a href="https://controlvps.ml" style="text-decoration: none; color: white">ControlVPS</a>
+          </div>
+        </div>
+        <nav class="nav-column w-col w-col-8">
+          <% if(!req.session.key) { %>
+            <a class="nav-link sign-up"  href="/login" target="_self">Login</a>
+            <% } else { %>
+                <a class="nav-link sign-up" href="/admin" target="_self"><%= name %></a>
+                <% } %>
+        </nav>
+      </div>
+    </div>
+  </header>
