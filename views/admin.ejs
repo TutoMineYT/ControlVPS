@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  
+  <meta charset="utf-8">
+
+  <title>ControlVPS | Admin Page</title>
+
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator"><link href="css/page.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <body style="background-color:#363b48"></body>
+  
+<%- include("./parts/header.ejs") %>
+  <div class="hero section">
+    <div class="w-container">
+      <h1 class="hero-heading">Admin Panel</h1>
+      <div class="button-group">
+        <a class="button sign-up" href="/api/reboot">Reboot</a>
+        <a class="button sign-up" href="/api/shutdown">Shutdown</a>
+        <div class="form_container">
+            <br>
+            <h2 style="color:white">Ejecute Command</h2>
+              <form method="post" action="/api/command">
+                <div>
+                  <input type="text" id="command" name="command" tabindex="1" placeholder="Command">
+                  <button id="submit">Ejecute</button>
+                </div>
+              </form>
+            </div>
+      </div>
+      
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br>
+<%- include("./parts/footer.ejs") %>
+</body>
+</html>
