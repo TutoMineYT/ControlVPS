@@ -45,7 +45,7 @@ http://192.168.8.254:9090
 ·) Create custom roles for the users on the admin panel.</h3>
 
 <h2> VERSION: </h2>
-`BETA-0.2.0`
+`BETA-0.2.0`<br>
 
 <footer> Made by TutoMine </footer>
 
