@@ -27,9 +27,17 @@ app.get("/login", async (req, res) => {
   if(req.session.key) return res.redirect("/admin")
   res.render("login.ejs", { req: req })
 })
+app.get("/logout", async (req, res) => {
+  if(!req.session.key) return res.redirect("/login")
+  req.session.key = null
+  res.redirect("/")
+})
 app.get("/admin", async (req, res) => {
   if(!req.session.key) return res.redirect("/login")
-  if(!db.tiene("keys." + req.session.key)) return res.redirect("/login")
+  if(!db.tiene("keys." + req.session.key)) {
+    req.session.key = null
+    res.redirect("/login")
+  }
   let name = await db.obtener("keys." + req.session.key)
     res.render("admin.ejs", { req: req, name: name })
 })
@@ -39,7 +47,10 @@ app.get("/api/:action", async (req, res) => {
   if(!req.params) return res.status(404).send("Invalid action provided/requested.")
 
   if(!req.session.key) return res.redirect("/login")
-  if(!db.tiene("keys." + req.session.key)) return res.redirect("/login")
+  if(!db.tiene("keys." + req.session.key)) {
+    req.session.key = null
+    res.redirect("/login")
+  }
 
   if(action === "reboot") {
     exec("reboot", () => {
@@ -55,7 +66,10 @@ app.get("/api/:action", async (req, res) => {
 
 app.post("/api/command", async (req, res) => {
   if(!req.session.key) return res.redirect("/login")
-  if(!db.tiene("keys." + req.session.key)) return res.redirect("/login")
+  if(!db.tiene("keys." + req.session.key)) {
+    req.session.key = null
+    res.redirect("/login")
+  }
   let command = req.body.command
   if(!command) return res.redirect("/admin")
   exec(command, () => {
