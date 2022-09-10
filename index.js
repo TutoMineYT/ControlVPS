@@ -18,6 +18,7 @@ app.use(cookieSession({
   keys: ['key1', 'key2']
 }))
 
+fs.unlink("./logs/logs.txt", async(error) => {})
 
 app.get("/", async (req, res) => {
   let name = await db.obtener("keys." + req.session.key)
@@ -62,6 +63,15 @@ app.get("/api/:action", async (req, res) => {
       res.redirect("/admin")
     });
   }
+  if(action === "logs") {
+    try {
+      const data = fs.readFileSync('./logs/logs.txt', 'UTF-8');
+    const array = data.split(/\r?\n/);
+    res.render("logs.ejs", { req: req, array: array })
+    } catch (e) {
+    res.render("logs.ejs", { req: req, array: [ "No logs" ] })
+    }
+  }
 })
 
 app.post("/api/command", async (req, res) => {
@@ -72,7 +82,7 @@ app.post("/api/command", async (req, res) => {
   }
   let command = req.body.command
   if(!command) return res.redirect("/admin")
-  exec(command, () => {
+  exec(command + ">> ./logs/logs.txt", () => {
     res.redirect("/admin")
   });
 })
