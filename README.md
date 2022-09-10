@@ -8,6 +8,7 @@
 <h2> TESTED ON: </h2>
 
 ·) Ubuntu 20.04
+·) Debian 10
 
 <h2> INSTALATION </h2>
 
