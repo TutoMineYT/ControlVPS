@@ -29,7 +29,8 @@ http://192.168.8.254:9090
 <h3> You can change them on the "mega_databases/webData.json" config </h3>
 
 <h2> IMAGES: </h2>
-<img src="https://cdn.discordapp.com/attachments/891335673934663730/1018175376834449428/unknown.png">
+<img src="https://cdn.discordapp.com/attachments/891335673934663730/1018175376834449428/unknown.png"><br>
+<img src="https://cdn.discordapp.com/attachments/891335673934663730/1018175571215253614/unknown.png">
 
 <footer> Made by TutoMine </footer>
 
