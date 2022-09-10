@@ -25,7 +25,7 @@ app.get("/", async (req, res) => {
   if(req.session.key) {
     if(!db.tiene("keys." + req.session.key)) {
     req.session.key = null
-    res.redirect("/")
+    return res.redirect("/")
   }
   }
     res.render("index.ejs", { req: req, name: name })
