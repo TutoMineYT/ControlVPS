@@ -46,7 +46,7 @@ http://192.168.8.254:9090
 
 <h2> VERSION: </h2>
 
-`PASSWORD: admin`
+`BETA-0.0.2`
 
 <br>
 
