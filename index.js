@@ -22,6 +22,12 @@ fs.unlink("./logs/logs.txt", async(error) => {})
 
 app.get("/", async (req, res) => {
   let name = await db.obtener("keys." + req.session.key)
+  if(req.session.key) {
+    if(!db.tiene("keys." + req.session.key)) {
+    req.session.key = null
+    res.redirect("/")
+  }
+  }
     res.render("index.ejs", { req: req, name: name })
 })
 app.get("/login", async (req, res) => {
