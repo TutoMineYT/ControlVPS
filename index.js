@@ -48,6 +48,15 @@ app.get("/admin", async (req, res) => {
   let name = await db.obtener("keys." + req.session.key)
     res.render("admin.ejs", { req: req, name: name })
 })
+app.get("/changePass", async (req, res) => {
+  if(!req.session.key) return res.redirect("/login")
+  if(!db.tiene("keys." + req.session.key)) {
+    req.session.key = null
+    res.redirect("/login")
+  }
+  let name = await db.obtener("keys." + req.session.key)
+    res.render("changePass.ejs", { req: req, name: name })
+})
 
 app.get("/api/:action", async (req, res) => {
   let action = req.params.action
@@ -91,6 +100,26 @@ app.post("/api/command", async (req, res) => {
   exec(command + ">> ./logs/logs.txt", () => {
     res.redirect("/admin")
   });
+})
+app.post("/api/changePass", async (req, res) => {
+  if(!req.session.key) return res.redirect("/login")
+  if(!db.tiene("keys." + req.session.key)) {
+    req.session.key = null
+    res.redirect("/login")
+  }
+  let password = req.body.password
+  let confirmpassword = req.body.confirmpassword
+  if(!password || !confirmpassword) return res.redirect("/changePass?status=error&error=missing_fields")
+  if(password !== confirmpassword) return res.redirect("/changePass?status=error&error=not_same_password")
+
+  let username = await db.obtener("keys." + req.session.key)
+
+  db.establecer("users." + username + ".password", password)
+  res.redirect("/changePass?status=success")
+  setTimeout(() => {
+    db.eliminar("keys." + req.session.key)
+  }, 500)
+ 
 })
 
 app.post("/login", async (req, res) => {

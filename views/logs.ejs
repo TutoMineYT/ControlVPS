@@ -1,7 +1,31 @@
 <body style="background-color:#363b48"></body>
 
-<h2 style="color: blue; text-align: center;">LASTEST COMMANDS LOGS</h2><br>
+<style>
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #2c9986; 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #2c9986; 
+      border-radius: 10px;
+      font-weight: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #33b59f; 
+    }
+    </style>
+
+<h2 style="color: #2c9986; text-align: center; font-family: Bahnschrift SemiBold">LASTEST COMMANDS LOGS</h2><br>
 
 <% array.forEach(async(line) => { %>
-    <h3 style="color: rgb(145, 145, 145); text-align: center;"><%=line%></h3> 
+    <h3 style="color: rgb(145, 145, 145); text-align: center; font-family: 'Courier New', monospace;"><%=line%></h3> 
     <% }); %>

@@ -16,26 +16,31 @@
 <%- include("./parts/header.ejs") %>
   <div class="hero section">
     <div class="w-container">
-      <h1 class="hero-heading">Admin Panel</h1>
+      <h1 class="hero-heading" style="font-family:Rockwell">Control Panel</h1><br>
+      <a class="nav-link sign-up" href="/changePass">Change user's password</a>
       <div class="button-group">
+        <BR>
         <a class="button sign-up" href="/api/reboot">Reboot</a>
         <a class="button sign-up" href="/api/shutdown">Shutdown</a>
         <div class="form_container">
             <br>
-            <h2 style="color:white">Ejecute Command</h2>
+           <center><span class="hero-typer">Ejecute Command</span></center><br>
               <form method="post" action="/api/command">
                 <div>
                   <input type="text" id="command" name="command" tabindex="1" placeholder="Command">
-                  <button id="submit">Ejecute</button>
+                  <button id="submit" class="button sign-up">Ejecute</button>
                 </div>
               </form>
-
-              <iframe src="/api/logs" style="width: 1000px; height: 400px;" frameBorder="0" > Browster not compatible </iframe>
+              
+              <iframe src="/api/logs" style="width: 500px; height: 400px;" frameBorder="0" > Browster not compatible </iframe>
+              
+              
             </div>
+            <a class="nav-link sign-up" href="/api/logs">Open full logs page</a>
+            
       </div>
       
     </div>
   </div>
-<%- include("./parts/footer.ejs") %>
 </body>
 </html>

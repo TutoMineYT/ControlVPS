@@ -11,8 +11,10 @@
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
   font-family: Montserrat, sans-serif;
-  color: #fff;
+  color: hsla(0, 0%, 100%, .81);
+  font-family: "Trebuchet MS";
   font-size: 14px;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -52,6 +54,7 @@
 
 .button.sign-up:hover {
   background-color: #33b59f;
+  color: #363b48;
 }
 
 .section {
@@ -107,6 +110,13 @@
   padding: 10px 20px;
   border-radius: 5px;
   background-color: #2c9986;
+  font-weight: bold;
+  font-family: "Trebuchet MS";
+}
+
+.nav-link.sign-up:hover {
+  background-color: #33b59f;
+  color: #363b48;
 }
 
 .nav-column {
@@ -115,11 +125,34 @@
 }
 
 .hero-heading {
-  font-family: Montserrat, sans-serif;
   color: #fff;
   font-size: 38px;
   font-weight: 400;
 }
+
+.hero-typer {
+  display: block;
+  font-family: monospace, Courier;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 15.50ch;
+  height: 1.7ch;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  animation: typing 2s steps(15), blink .5s infinite step-end alternate;
+  overflow:hidden;
+  }
+  
+@keyFrames typing {
+  
+  from { width: 0ch}
+  }
+  
+@keyFrames blink {
+   50% { border-color: transparent}
+  }
+
 
 .hero-subhead {
   color: #a3a8b6;
@@ -135,28 +168,32 @@
 
 .form_container input {
   width: 300px;
-  border: 1px solid #b0b0b0;
-  height: 50px;
+  border: 1px solid #2c9986;
+  height: 45px;
   margin-bottom: 25px;
   padding-left: 15px;
   background-color: transparent;
   outline: none;
   color: #b0b0b0;
+  border-radius: 8px;
 }
 
 .form_container input::-webkit-input-placeholder {
   text-align: center;
   color: #b0b0b0;
+  border-radius: 8px;
 }
 
 .form_container input:-ms-input-placeholder {
   text-align: center;
   color: #b0b0b0;
+  border-radius: 8px;
 }
 
 .form_container input::-ms-input-placeholder {
   text-align: center;
   color: #b0b0b0;
+  border-radius: 8px;
 }
 
 .form_container input::placeholder {
@@ -167,6 +204,7 @@
 .form_container input.message-box {
   text-align: center;
   height: 120px;
+  border-radius: 8px;
 }
 
 .form_container .btn_box {
@@ -178,21 +216,3 @@
           justify-content: center;
 }
 
-.form_container button {
-  border: none;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 15px 65px;
-  background-color: #ff4646;
-  color: #ffffff;
-  border-radius: 0;
-  border: 1px solid #ff4646;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  font-weight: bold;
-}
-
-.form_container button:hover {
-  background-color: transparent;
-  color: #ff4646;
-}

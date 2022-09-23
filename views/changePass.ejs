@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+  
+  <meta charset="utf-8">
+
+  <title>ControlVPS | Change Password</title>
+
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator"><link href="css/page.css" rel="stylesheet" type="text/css">
+
+</head>
+<style>
+  .errordiv {
+    background-color: rgba(255, 0, 0, 0.685); /* Green */
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: not-allowed;
+  }
+  .successdiv {
+    background-color: rgba(51, 255, 0, 0.685); /* Green */
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: not-allowed;
+  }
+  </style>
+
+<body style="background-color:#363b48">
+<body>
+  
+<%- include("./parts/header.ejs") %>
+
+<% if(req.query.status === "error") { 
+  if(req.query.error === "missing_fields") { %> 
+    <br>
+    <center><button class="errordiv">Error:<br>Missing Fields.</button></center>
+<% } 
+if(req.query.error === "not_same_password") { %>
+  <br>
+  <center><button class="errordiv">Error:<br>Passwords does not match.</button></center>
+<% }} %>
+<% if(req.query.status === "success") { %>
+  <br>
+  <center><button class="successdiv">Success:<br>Password has been changed.</button></center>
+<% } %>
+  <div class="hero section">
+    <div class="w-container">
+        <div class="form_container">
+          <h2 style="color:white; font-family:Rockwell">Change password</h2>
+            <form method="post" action="/api/changePass">
+              <div>
+                <input type="password" id="password" name="password" tabindex="1" placeholder="Password">
+              </div>
+              <div>
+                <input type="password" id="confirmpassword" name="confirmpassword"  tabindex="2" placeholder="Confirm Password">
+              </div>
+              <div class="btn_box ">
+                <button id="submit" class="button sign-up">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+    </div>
+  </div>
+  <br><br>
+<%- include("./parts/footer.ejs") %>
+</body>
+</html>

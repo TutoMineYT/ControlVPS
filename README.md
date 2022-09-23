@@ -34,16 +34,15 @@ http://192.168.8.254:9090
 <img src="https://cdn.discordapp.com/attachments/891335673934663730/1018193960994357359/unknown.png">
 
 <h2> LAST UPDATES: </h2>
-<h3> ·) Added logs for commands ejecuted on the website.</h3>
+<h3> ·) Added change password on admin panel.<br>·) Changed full theme</h3>
 
 <h2> UPDATES ON THE FUTURE: </h2>
-<h3>·) Change password on the admin panel.<br>
 ·) Create users in the admin panel (With admin permission).<br>
 ·) Create custom roles for the users on the admin panel.</h3>
 
 <h2> VERSION: </h2>
 
-`BETA-1.0.0`
+`V-1.0.0`
 
 <br>
 
