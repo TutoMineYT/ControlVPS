@@ -29,9 +29,6 @@ http://192.168.8.254:9090
 `PASSWORD: admin`
 <h3> You can change them on the "mega_databases/webData.json" config </h3>
 
-<h2> IMAGES: </h2>
-<img src="https://cdn.discordapp.com/attachments/891335673934663730/1018184387315122258/unknown.png"><br>
-<img src="https://cdn.discordapp.com/attachments/891335673934663730/1018193960994357359/unknown.png">
 
 <h2> LAST UPDATES: </h2>
 <h3> ·) Added change password on admin panel.<br>·) Changed full theme</h3>
@@ -43,6 +40,12 @@ http://192.168.8.254:9090
 <h2> VERSION: </h2>
 
 `V-1.0.0`
+
+<h2> IMAGES: </h2>
+<img src="https://cdn.discordapp.com/attachments/891335673934663730/1022921049299505193/unknown.png"><br>
+<img src="https://cdn.discordapp.com/attachments/891335673934663730/1022921135546961920/unknown.png"><br>
+<img src="https://cdn.discordapp.com/attachments/891335673934663730/1022921186973335712/unknown.png"><br>
+<img src="https://cdn.discordapp.com/attachments/891335673934663730/1022921278358827098/unknown.png">
 
 <br>
 
