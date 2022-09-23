@@ -1,5 +1,5 @@
 <h1 style="color:blue">ControlVPS</h2>
-<h3 style="color:cyan">ControlVPS is a panel to control your UBUNTU VPS/LPS/ETC easily.</h3>
+<h3 style="color:cyan">ControlVPS is a panel to control your <b>SERVER</b> easily.</h3>
 
 <h2> REQUERIMENTS </h2>
 
@@ -7,7 +7,7 @@
 
 <h2> TESTED ON: </h2>
 
-·) Ubuntu 20.04
+·) Ubuntu 20.04<br>
 ·) Debian 10
 
 <h2> INSTALATION </h2>
