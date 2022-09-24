@@ -45,6 +45,7 @@ http://192.168.8.254:9090
 ·) Create custom roles for the users on the admin panel.</h3>
 
 <h2> VERSION: </h2>
+
 `V-1.2.3`
 
 <h2> IMAGES: </h2>
