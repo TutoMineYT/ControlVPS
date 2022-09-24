@@ -16,6 +16,9 @@
 `cd ControlVPS`<br>
 `npm start`
 
+<h2> DEMO <g/h2>
+  <iframe src="https://demo.controlvps.ml"></iframe>
+
 <h2> ACCESS </h2>
 
 http://IP:9090
@@ -42,7 +45,7 @@ http://192.168.8.254:9090
 
 <h2> VERSION: </h2>
 
-`V-1.0.3`
+`V-1.2.0`
 
 <h2> IMAGES: </h2>
 <img src="https://cdn.discordapp.com/attachments/891335673934663730/1022921049299505193/unknown.png"><br>
