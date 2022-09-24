@@ -16,8 +16,9 @@
 `cd ControlVPS`<br>
 `npm start`
 
-<h2> DEMO <g/h2>
-  <a href="https://demo.controlvps.ml">GO TO DEMO</a>
+<h2> DEMO </h2>
+<a href="https://demo.controlvps.ml">GO TO DEMO</a>
+  
 
 <h2> ACCESS </h2>
 
