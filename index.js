@@ -5,7 +5,17 @@ const megadb = require("megadb")
 const db = new megadb.crearDB("webData")
 var bodyParser = require('body-parser');
 const { exec } = require("child_process");
+const chalk = require('chalk');
 const fs = require('fs');
+
+console.log(chalk.cyan("(STARTING) -> Starting system."))
+console.log(chalk.cyan("(LOADING) -> Loading webserver."))
+console.log(chalk.cyan("(LOADING) -> Loading anticrash."))
+
+process.on('uncaughtException', async(error) => console.log(chalk.red("(ERROR) -> " + chalk.magenta(error))))
+process.on('unjauledException', async(error) => console.log(chalk.red("(ERROR) -> " + chalk.magenta(error))))
+console.log(chalk.green("(LOADED) -> Anticrash loaded."))
+
 
 var app = express()
 app.listen(9090)
@@ -142,6 +152,11 @@ app.post("/login", async (req, res) => {
   res.redirect("/admin")
 
 })
+
+
+console.log(chalk.green("(LOADED) -> Webserver loaded."))
+console.log(chalk.green("(STARTED) -> System started."))
+
 
 
 
