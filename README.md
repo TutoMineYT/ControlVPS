@@ -17,7 +17,7 @@
 `npm start`
 
 <h2> DEMO <g/h2>
-  <iframe src="https://demo.controlvps.ml"></iframe>
+  <a href="https://demo.controlvps.ml">GO TO DEMO</a>
 
 <h2> ACCESS </h2>
 
