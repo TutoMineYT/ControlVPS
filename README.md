@@ -45,7 +45,8 @@ http://192.168.8.254:9090
 ·) Create custom roles for the users on the admin panel.</h3>
 
 <h2> VERSION: </h2>
-`V-1.2.5`
+
+`V-1.2.7`
 
 <h2> IMAGES: </h2>
 <img src="https://cdn.discordapp.com/attachments/891335673934663730/1023314283012034620/unknown.png"><br>
