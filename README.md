@@ -16,6 +16,10 @@
 `cd ControlVPS`<br>
 `npm start`
 
+<h2> DEMO </h2>
+<a href="https://demo.controlvps.ml">GO TO DEMO</a>
+  
+
 <h2> ACCESS </h2>
 
 http://IP:9090
@@ -41,7 +45,6 @@ http://192.168.8.254:9090
 ·) Create custom roles for the users on the admin panel.</h3>
 
 <h2> VERSION: </h2>
-
 `V-1.2.3`
 
 <h2> IMAGES: </h2>
