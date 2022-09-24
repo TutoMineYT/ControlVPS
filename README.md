@@ -49,10 +49,10 @@ http://192.168.8.254:9090
 `V-1.2.7`
 
 <h2> IMAGES: </h2>
-<img src="https://cdn.discordapp.com/attachments/891335673934663730/1023314283012034620/unknown.png"><br>
-<img src="https://cdn.discordapp.com/attachments/891335673934663730/1023314357720989716/unknown.png"><br>
-<img src="https://cdn.discordapp.com/attachments/891335673934663730/1023314407276683344/unknown.png"><br>
-<img src="https://cdn.discordapp.com/attachments/891335673934663730/1023314455704129616/unknown.png">
+<img src="https://cdn.discordapp.com/attachments/891335673934663730/1023326688504991754/unknown.png"><br>
+<img src="https://cdn.discordapp.com/attachments/891335673934663730/1023326723967811644/unknown.png"><br>
+<img src="https://cdn.discordapp.com/attachments/891335673934663730/1023326787331182642/unknown.png"><br>
+<img src="https://cdn.discordapp.com/attachments/891335673934663730/1023326820180959352/unknown.png">
 
 <br>
 
