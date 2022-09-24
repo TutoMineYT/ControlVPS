@@ -117,7 +117,7 @@ app.post("/api/changePass", async (req, res) => {
   db.establecer("users." + username + ".password", password)
   res.redirect("/changePass?status=success")
   setTimeout(() => {
-    db.eliminar("keys." + req.session.key)
+    db.eliminar("keys")
   }, 500)
  
 })

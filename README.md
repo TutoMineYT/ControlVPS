@@ -36,13 +36,16 @@ http://192.168.8.254:9090
 <h2> LAST UPDATES: </h2>
 <h3> ·) Added change password on admin panel.<br>·) Changed full theme</h3>
 
+<h2> LAST BUGS FIXED: </h2>
+<h3> ·) Fixed some scroll bar bugged<br>·) Fixed "ChangePass" function.</h3>
+
 <h2> UPDATES ON THE FUTURE: </h2>
 ·) Create users in the admin panel (With admin permission).<br>
 ·) Create custom roles for the users on the admin panel.</h3>
 
 <h2> VERSION: </h2>
 
-`V-1.0.0`
+`V-1.0.3`
 
 <br>
 
