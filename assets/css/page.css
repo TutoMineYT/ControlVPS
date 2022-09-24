@@ -62,6 +62,8 @@
   padding-bottom: 65px;
 }
 
+
+
 .section.header {
   padding-top: 22px;
   padding-bottom: 22px;
@@ -120,7 +122,7 @@
 }
 
 .nav-column {
-  padding-top: 10px;
+  padding-top: 30px;
   text-align: right;
 }
 
@@ -165,7 +167,21 @@
   padding-bottom: 21px;
   background-color: #292c38;
 }
+.nav-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+  padding-top: 25px;
+}
 
+.logo{
+  width: 70px;
+  height: 70px;
+  border-right: 4px solid;
+  padding-bottom: 6px;
+  }
 .form_container input {
   width: 300px;
   border: 1px solid #2c9986;

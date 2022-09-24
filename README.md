@@ -31,7 +31,7 @@ http://192.168.8.254:9090
 
 
 <h2> LAST UPDATES: </h2>
-<h3> ·) Added change password on admin panel.<br>·) Changed full theme</h3>
+<h3> ·) Added logo to website.<br>·) Modified nav bar</h3>
 
 <h2> LAST BUGS FIXED: </h2>
 <h3> ·) Fixed some scroll bar bugged<br>·) Fixed "ChangePass" function.</h3>
@@ -42,7 +42,7 @@ http://192.168.8.254:9090
 
 <h2> VERSION: </h2>
 
-`V-1.0.3`
+`V-1.2.3`
 
 <h2> IMAGES: </h2>
 <img src="https://cdn.discordapp.com/attachments/891335673934663730/1022921049299505193/unknown.png"><br>
