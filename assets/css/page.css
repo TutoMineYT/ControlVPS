@@ -141,7 +141,8 @@
   height: 1.7ch;
   font-size: 30px;
   font-weight: 400;
-  color: #fff;
+  padding-bottom: 20px;
+  color: #2c9986;
   animation: typing 2s steps(15), blink .5s infinite step-end alternate;
   overflow:hidden;
   }
@@ -172,6 +173,7 @@
   margin: 0px;
   text-align: center;
   display:inline-block;
+  color: #2c9986;
   vertical-align:top;
   padding-top: 25px;
 }
@@ -180,6 +182,7 @@
   width: 70px;
   height: 70px;
   border-right: 4px solid;
+  border-color: #2c9986;
   padding-bottom: 6px;
   }
 .form_container input {
