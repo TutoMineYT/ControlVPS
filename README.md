@@ -31,8 +31,7 @@ http://192.168.8.254:9090
 
 `USERNAME: admin`
 `PASSWORD: admin`
-<h3> You can change them on the "mega_databases/webData.json" config </h3>
-
+<h3> You can change the password on the admin panel.</h3>
 
 <h2> LAST UPDATES: </h2>
 <h3> ·) Added logo to website.<br>·) Modified nav bar<br>·) Modified some colors.</h3>
